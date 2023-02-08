@@ -75,6 +75,15 @@
 
 //  square(5)
 
-(function abc(num) {
-    console.log(num + num)
-})(10)
+// (function abc(num) {
+//     console.log(num + num)
+// })(10)
+
+
+//Add two numbers function
+
+function add (num1, num2) {
+    console.log('addition of ' +num1+ ' and '  +num2 +' is = ', num1 + num2);
+}
+
+add(10,2)
