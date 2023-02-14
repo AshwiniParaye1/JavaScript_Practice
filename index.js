@@ -190,3 +190,7 @@
 
 ////////////////////////////////////////////////////////////////////////////////
 
+
+// Write a function that takes an object as an argument and returns a new object with all the properties from the original object, but with their values multiplied by 2
+
+
