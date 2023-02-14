@@ -193,21 +193,38 @@
 
 // Write a function that takes an object as an argument and returns a new object with all the properties from the original object, but with their values multiplied by 2
 
-const obj = {
-    a: 2,
-    b: 3
-}
+// const obj = {
+//     a: 2,
+//     b: 3
+// }
 
-function objFunction() {
+// function objFunction() {
     
-console.log('org obj===', obj)
-const multiplyy = 2;
+// console.log('org obj===', obj)
+// const multiplyy = 2;
 
-const newObj = Object.fromEntries(
-    Object.entries(obj).map(([name, value]) => [name, value * multiplyy])
-);
+// const newObj = Object.fromEntries(
+//     Object.entries(obj).map(([name, value]) => [name, value * multiplyy])
+// );
 
-console.log('new obj===',newObj);
-}
+// console.log('new obj===',newObj);
+// }
 
-objFunction(obj)
+// objFunction(obj)
+
+const obj = {
+   a: 2,
+   b: 3,
+   c: 4,
+   d: 8
+};
+
+console.log('org obj==', obj)
+
+const newObj = {};
+
+for (const name in obj) {
+    newObj[name] = obj[name] * 2;
+    }
+
+console.log("new obj==",newObj);
