@@ -267,3 +267,59 @@
 // var x='Hello';
 // console.log(x[0])
 
+//10
+// console.log("8" - 4)
+
+//11
+// console.log("four" * 3)
+
+//12
+// console.log("15" / 5)
+
+// the / operator will automatically convert the string "15" to the number 15 and then divide it by 5
+
+//13
+// let a = 10;
+// let b = 20;
+// let c = '30';
+
+// console.log(a + b + c);
+
+//14
+// let x = 10;
+// let y = '5';
+
+// console.log(x + y);
+
+//15
+// let a = [1, 2, 3, 4, 5];
+
+// console.log(a.slice(1, 3));
+
+//16
+// let a = ['a', 'b', 'c'];
+// let b = ['d', 'e', 'f'];
+
+// console.log(a.concat(b));
+
+//17
+// let a = 10;
+
+// function foo() {
+//   console.log(a);
+//   let a = 20;
+// }
+
+// foo();
+
+//18
+var a = 10;
+
+function foo() {
+  console.log(a); //a is not initialized here before accessing
+  var a = 20;
+  console.log('here value of a will be 20 after initalization------',a)
+  }
+
+foo();
+console.log('here value of a will be 10------',a)
