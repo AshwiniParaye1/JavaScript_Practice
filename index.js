@@ -253,3 +253,17 @@
 //5
 // console.log(2 == "2");
 
+//6
+// var x = 10;
+// console.log(++x + x++);
+
+//7
+// console.log(2+3+'7')
+
+//8
+// console.log('7'+2+3)
+
+//9
+// var x='Hello';
+// console.log(x[0])
+
