@@ -212,19 +212,44 @@
 
 // objFunction(obj)
 
-const obj = {
-   a: 2,
-   b: 3,
-   c: 4,
-   d: 8
-};
+// const obj = {
+//    a: 2,
+//    b: 3,
+//    c: 4,
+//    d: 8
+// };
 
-console.log('org obj==', obj)
+// console.log('org obj==', obj)
 
-const newObj = {};
+// const newObj = {};
 
-for (const name in obj) {
-    newObj[name] = obj[name] * 2;
-    }
+// for (const name in obj) {
+//     newObj[name] = obj[name] * 2;
+//     }
 
-console.log("new obj==",newObj);
+// console.log("new obj==",newObj);
+
+
+////////////////////////////////////////////////////////////////////////////////
+
+
+// guess the output questions
+
+// 1
+// const arr = [1,2,3]
+// console.log(arr)
+// console.log(arr.length = 0)
+// console.log(arr)
+
+// 2
+// console.log(typeof NaN);
+
+//3
+// console.log("5" + 3);
+
+//4
+// console.log("Hello" - 2);
+
+//5
+// console.log(2 == "2");
+
