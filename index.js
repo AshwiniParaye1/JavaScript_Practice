@@ -81,7 +81,7 @@
 
 ///////////////////////////////////////////////////////////////////////
 
-//Add two numbers function
+//!Add two numbers function
 
 // function add (num1, num2) {
 //     console.log('addition of ' +num1+ ' and '  +num2 +' is = ', num1 + num2);
@@ -91,7 +91,7 @@
 
 /////////////////////////////////////////////////////////////////////////
 
-// Hello is alerted repeatedly after every 3 seconds
+//! Hello is alerted repeatedly after every 3 seconds
 // let timerId= setInterval(() => alert('Hello'), 2000);
 
 // Clear intervals after 6 sec with the timer id 
@@ -99,7 +99,7 @@
 
 ///////////////////////////////////////////////////////////////////////////////
 
-//Asa program Jo pratyek 10 second la output detoy
+//!Asa program Jo pratyek 10 second la output detoy
 //   function waitForSecond () {
 //     alert('Hellooo')
 //   }
@@ -109,7 +109,7 @@
 /////////////////////////////////////////////////////////////////////////////
 
 
-// Write a function that takes two arguments, an array and an element, and returns the number of times the element appears in the array.
+//! Write a function that takes two arguments, an array and an element, and returns the number of times the element appears in the array.
 
 // const arr = [ 1,2,3,3,3,4,2,5,5,1,1,1,1,1 ]
 // var num = {};
@@ -136,7 +136,7 @@
 ////////////////////////////////////////////////////////////////////////////////
 
 
-// Write a function that takes a string as an argument and returns the string reversed.
+//! Write a function that takes a string as an argument and returns the string reversed.
 
 
 // function reverseString (str) {
@@ -156,7 +156,7 @@
 ////////////////////////////////////////////////////////////////////////////////
 
 
-// Write a function that takes an array of numbers as an argument and returns the sum of the elements in the array
+//! Write a function that takes an array of numbers as an argument and returns the sum of the elements in the array
 
 // var arr = [ 1, 2, 3, 4, 5 ]
 //  var a, b;
@@ -174,7 +174,7 @@
 
 ////////////////////////////////////////////////////////////////////////////////
 
-// Write a function that takes two arrays of numbers as arguments and returns a new array that contains the elements from both arrays, sorted in ascending order.
+//! Write a function that takes two arrays of numbers as arguments and returns a new array that contains the elements from both arrays, sorted in ascending order.
 
 // const arr1 = ['a', 's', 'h', 'u']
 // const arr2 = ['a', 'k', 's', 'u']
@@ -191,7 +191,7 @@
 ////////////////////////////////////////////////////////////////////////////////
 
 
-// Write a function that takes an object as an argument and returns a new object with all the properties from the original object, but with their values multiplied by 2
+//! Write a function that takes an object as an argument and returns a new object with all the properties from the original object, but with their values multiplied by 2
 
 // const obj = {
 //     a: 2,
@@ -233,7 +233,7 @@
 ////////////////////////////////////////////////////////////////////////////////
 
 
-// guess the output questions
+//! guess the output questions
 
 // 1
 // const arr = [1,2,3]
@@ -276,7 +276,7 @@
 //12
 // console.log("15" / 5)
 
-// the / operator will automatically convert the string "15" to the number 15 and then divide it by 5
+//? the / operator will automatically convert the string "15" to the number 15 and then divide it by 5
 
 //13
 // let a = 10;
@@ -313,13 +313,43 @@
 // foo();
 
 //18
-var a = 10;
+// var a = 10;
 
-function foo() {
-  console.log(a); //a is not initialized here before accessing
-  var a = 20;
-  console.log('here value of a will be 20 after initalization------',a)
-  }
+// function foo() {
+//   console.log(a); //a is not initialized here before accessing
+//   var a = 20;
+//   console.log('here value of a will be 20 after initalization------',a)
+//   }
 
-foo();
-console.log('here value of a will be 10------',a)
+// foo();
+// console.log('here value of a will be 10------',a)
+
+////////////////////////////////////////////////////////////////////////////////
+
+//!rest parameter
+
+// function functionInput(...input) {
+//     let sum = 0;
+//     for(let i of input) {
+//         sum +=i;
+//         console.log("input==== ", i);
+//     }
+//     console.log("sum >>>>>>> ", sum);
+//     return sum;
+// }
+
+// console.log("1st output ===", functionInput(0,1,2));
+// console.log("2nd output ===", functionInput(1,2,3,));
+// console.log("3rd output ===", functionInput(5,5,5,5,5));
+
+
+//////////////////////////////////////////////////////////////////////////////
+
+
+//! Spread Operator
+
+const arr = [ 1,2,2,3,9 ];
+
+const maxValue = Math.max(1,2,3);
+
+console.log("zzzzz", maxValue);
