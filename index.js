@@ -348,8 +348,11 @@
 
 //! Spread Operator
 
-const arr = [ 1,2,2,3,9 ];
+// const arr = [ 1,2,2,3,9 ];
 
-const maxValue = Math.max(1,2,3);
+// const maxValue = Math.max(arr);
+// const maxValueSpread = Math.max(...arr)
 
-console.log("zzzzz", maxValue);
+// console.log("zzzzz == ", maxValue);
+
+// console.log("maxValueSpread ===== ", maxValueSpread);
