@@ -361,10 +361,28 @@
 
 //!  Destructuring
 
-const destruct = { fname: "ashwini", age: 24 };
+// const destruct = { fname: "ashwini", age: 24 };
 
-const fname = destruct.fname;
-console.log("name>>>> ", fname);
+// const fname = destruct.fname;
+// console.log("name>>>> ", fname);
 
-const age = destruct.age;
-console.log('age >>>> ', age);
+// const age = destruct.age;
+// console.log('age >>>> ', age);
+
+///////////////////////////////////////////////////
+
+// const obj = { fname: "mayuri", age:504 }
+
+// const { fname, age } = obj;
+
+// console.log("fname >>>>>>>> ", fname);
+// console.log("age >>>>> ", age);
+
+//////////////////////////////////////////////////////
+
+//! Destructuring via rest elements
+
+const [a, b, ...arr] = [1, 2, 3, 4, 5, 7];
+
+console.log(a, b);
+console.log(arr)
