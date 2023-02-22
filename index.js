@@ -356,3 +356,15 @@
 // console.log("zzzzz == ", maxValue);
 
 // console.log("maxValueSpread ===== ", maxValueSpread);
+
+/////////////////////////////////////////////////////////////////
+
+//!  Destructuring
+
+const destruct = { fname: "ashwini", age: 24 };
+
+const fname = destruct.fname;
+console.log("name>>>> ", fname);
+
+const age = destruct.age;
+console.log('age >>>> ', age);
