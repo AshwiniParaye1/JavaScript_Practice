@@ -382,7 +382,36 @@
 
 //! Destructuring via rest elements
 
-const [a, b, ...arr] = [1, 2, 3, 4, 5, 7];
+// const [a, b, ...arr] = [1, 2, 3, 4, 5, 7];
 
-console.log(a, b);
-console.log(arr)
+// console.log(a, b);
+// console.log(arr)
+
+//////////////////////////////////////////////////////
+
+//! Use Destructuring Assignment to Pass an Object as a Function's Parameters
+
+// const profileUpdate = (profileData) => {
+//   const { name, age, nationality, location } = profileData;
+
+// }
+
+// const profileUpdate2 = ({ name, age, nationality, location }) => {
+// console.log(name)
+// }
+
+// profileUpdate2({name:"xyz"})
+
+//////////////////////////////////////////////////////////////////
+
+// const stats = {
+//   max: 56.78,
+//   standard_deviation: 4.34,
+//   median: 34.54,
+//   mode: 23.87,
+//   min: -0.75,
+//   average: 35.85
+// };
+
+// const half = ({max, min}) =>  
+//    (max + min) / 2.0
