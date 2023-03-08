@@ -418,3 +418,52 @@
 
 ///////////////////////////////////////////////////////////////
 
+//! callback function
+
+
+// function getNumber(callback) {
+//   const number = Math.floor(Math.random() * 10) + 1;
+//   callback(number);
+// }
+// function printNumber(number) {
+//   console.log("number ==== ",number);
+// }
+// getNumber(printNumber);
+
+//////////////////////////////////////////////////////////////
+
+//! example 2
+
+// Define functions to cook each item
+// function cookBacon(callback) {
+//   console.log("Cooking bacon...");
+//   setTimeout(function() {
+//     console.log("Bacon is done!");
+//     callback();
+//   }, 5000); // bacon takes 3 seconds to cook
+// }
+
+// function cookEggs(callback) {
+//   console.log("Cooking eggs...");
+//   setTimeout(function() {
+//     console.log("Eggs are done!");
+//     callback();
+//   }, 3000); // eggs take 2 seconds to cook
+// }
+
+// function toastBread(callback) {
+//   console.log("Toasting bread...");
+//   setTimeout(function() {
+//     console.log("Toast is done!");
+//     callback();
+//   }, 2000); // toast takes 1 second to cook
+// }
+
+// // Use callbacks to make the breakfast sandwich
+// cookBacon(function() {
+//   cookEggs(function() {
+//     toastBread(function() {
+//       console.log("Breakfast sandwich is ready!");
+//     });
+//   });~
+// });
