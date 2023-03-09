@@ -525,3 +525,22 @@
 
 //////////////////////////////////////////////////////////////////
 
+// !Asynchronous async / await
+
+let result = 0;
+
+async function addNum4(a,b){
+
+    await new Promise((resolve, reject) =>{
+        setTimeout(() => {
+            result = a * b;
+            resolve(result);
+        }, 2000)
+    })
+    return result;
+}
+
+addNum4(4, 2)
+    .then((result) => {
+     console.log("async/await result ======== ", result)
+})
