@@ -465,5 +465,20 @@
 //     toastBread(function() {
 //       console.log("Breakfast sandwich is ready!");
 //     });
-//   });~
+//   });
 // });
+
+/////////////////////////////////////////////////////////////////////
+
+//! Synchronous
+
+// let result = 0;
+
+// function addNum (a, b) {
+//     result = a + b;
+// }
+
+// addNum(2, 3);
+// console.log("result ========= ", result);
+
+/////////////////////////////////////////////////////
