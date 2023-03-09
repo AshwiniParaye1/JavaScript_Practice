@@ -485,18 +485,43 @@
 
 // !Asynchronous callback
 
-let result = 0;
+// let result = 0;
 
-function addNum2(a,b, callback){
-    setTimeout(() => {
-        result = a + b;
+// function addNum2(a,b, callback){
+//     setTimeout(() => {
+//         result = a + b;
 
-        callback(result)
-    }, 2000)
-}
+//         callback(result)
+//     }, 2000)
+// }
 
-addNum2(2,3, (result) => {
+// addNum2(2,3, (result) => {
 
-console.log("result ========= ", result)
+// console.log(" callback result ========= ", result)
 
-})
+// })
+
+////////////////////////////////////////////////////////////////////////
+
+// !Asynchronous promise
+
+// let result = 0;
+
+// function addNum3(a,b){
+
+//     return new Promise((resolve, reject) => {
+//         setTimeout(()=> {
+//             result = a + b;
+//             resolve(result)
+//         }, 2000)
+//     })
+
+// }
+
+// addNum3(2,3)
+// .then((result) => {
+//     console.log(" promise result ========= ", result)
+// })
+
+//////////////////////////////////////////////////////////////////
+
