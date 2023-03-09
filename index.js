@@ -482,3 +482,21 @@
 // console.log("result ========= ", result);
 
 /////////////////////////////////////////////////////
+
+// !Asynchronous callback
+
+let result = 0;
+
+function addNum2(a,b, callback){
+    setTimeout(() => {
+        result = a + b;
+
+        callback(result)
+    }, 2000)
+}
+
+addNum2(2,3, (result) => {
+
+console.log("result ========= ", result)
+
+})
