@@ -527,20 +527,100 @@
 
 // !Asynchronous async / await
 
-let result = 0;
+// let result = 0;
 
-async function addNum4(a,b){
+// async function addNum4(a,b){
 
-    await new Promise((resolve, reject) =>{
-        setTimeout(() => {
-            result = a * b;
-            resolve(result);
-        }, 2000)
-    })
-    return result;
-}
+//     await new Promise((resolve, reject) =>{
+//         setTimeout(() => {
+//             result = a * b;
+//             resolve(result);
+//         }, 2000)
+//     })
+//     return result;
+// }
 
-addNum4(4, 2)
-    .then((result) => {
-     console.log("async/await result ======== ", result)
-})
+// addNum4(4, 2)
+//     .then((result) => {
+//      console.log("async/await result ======== ", result)
+// })
+
+////////////////////////////////////////////////////////////////////
+
+// const createPerson = (name, age, gender) => ({
+//   // Only change code below this line
+// name, age, gender
+//   // Only change code above this line
+// })
+// console.log("=========", createPerson())
+
+/////////////////////////////////////////////////////////////////////////
+
+// ! Class keyword Javascript
+
+
+// class Animal {
+//   constructor(name, age, sound) {
+//     this.name = name;
+//     this.age = age;
+//     this.sound = sound;
+//   }
+
+//   eat(food) {
+//     console.log(`${this.name} is eating ${food}.`);
+//   }
+
+//   makeSound() {
+//     console.log(`${this.name} says ${this.sound}!`);
+//   }
+// }
+
+// class Dog extends Animal {
+//   constructor(name, age) {
+//     super(name, age, 'bark');
+//   }
+
+//   fetch(item) {
+//     console.log(`${this.name} fetched the ${item}!`);
+//   }
+// }
+// const myAnimal = new Animal('Leo', 5, 'roar');
+// myAnimal.makeSound(); // output: Leo says roar!
+
+// const myDog = new Dog('Buddy', 3);
+// myDog.makeSound(); // output: Buddy says bark!
+// myDog.fetch('ball'); // output: Buddy fetched the ball!
+
+
+//////////////////////////////////////////////////////////////
+
+
+// class Vegetable {
+// // Only change code above this line
+// constructor(name, color){
+//   this.name = name;
+//   this.color = color;
+// }
+
+//     vegColor() {
+//         console.log(`${this.name} has ${this.color} color!`);
+//     }
+
+// }
+
+// class Tomato extends Vegetable{
+//     constructor(name){
+//         super(name, 'red');
+//     }
+
+//       fetch(item) {
+//          console.log(`${this.name} fetched the ${item}!`);
+//          }
+// }
+
+// // const carrot = new Vegetable('carrot');
+// // console.log(carrot.name); // Should display 'carrot'
+
+// const tomato = new Vegetable('tomato');
+// console.log("============",tomato.name)
+// tomato.vegColor()
