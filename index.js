@@ -639,3 +639,20 @@
 // console.log(carrot.name); // Should display 'carrot'
 
 /////////////////////////////////////////////////////////////
+
+// //! Promise
+
+// const makeServerRequest = new Promise((resolve, reject) => {
+//   // responseFromServer is set to true to represent a successful response from a server
+//   let responseFromServer = true;
+	
+//   if(responseFromServer) {
+//     resolve("resolved >>>>>>>>> We got the data");
+//   } else {	
+//     reject("reject >>>>>>>>>> Data not received");
+//   }
+// });
+
+// makeServerRequest.then(result => {
+//   console.log(result);
+// });
