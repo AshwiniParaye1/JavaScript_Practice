@@ -657,10 +657,34 @@
 
 // console.log("newArr ===== ", newArr);
 
-obj1 = { a: 1, b: "b" };
+// obj1 = { a: 1, b: "b" };
 
-obj2 = { name: "ashwini", something: "zzzzz", what: 2, s: 44 };
+// obj2 = { name: "ashwini", something: "zzzzz", what: 2, s: 44 };
 
-newObj = { ...obj1, ...obj2 };
+// newObj = { ...obj1, ...obj2 };
 
-console.log("newObj ======= ", newObj);
+// console.log("newObj ======= ", newObj);
+
+//!          2. Destructuring
+
+// let obj1 = {
+//   name1: "Ashwini",
+//   class1: "2B",
+//   city: "Aurangabad",
+// };
+
+// let obj2 = {};
+
+// obj2 = obj1.name1;
+// obj2 = obj1.class1;
+// obj2 = obj1.city;
+
+// obj2 = { ...obj1, city: "pune" };
+
+// console.log("obj2 ====", obj2);
+
+// console.log("obj1 =====", obj1);
+
+// let newOBJ = { ...obj1, ...obj2 };
+
+// console.log("newOBJ>>>>>>>>", newOBJ);
