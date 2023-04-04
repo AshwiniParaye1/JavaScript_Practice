@@ -3,10 +3,8 @@
 // let lastName="paraye";
 // console.log(firstName, lastName);
 
-
 // function test() {
 //     var a = 'Heyyyy';  //function scope
-
 
 //     if (true) {
 //         var a = "Beautiful";   //block scope
@@ -28,7 +26,6 @@
 
 // function abc() {
 
-    
 //     console.log(a)
 
 //     let a = 10;
@@ -55,7 +52,6 @@
 // }
 // init();
 
-
 // function greeting(name) {
 //   console.log(`Hello, ${name}`);
 // }
@@ -66,8 +62,6 @@
 // }
 
 // processUserInput(greeting);
-
-
 
 //  function square (num) {
 //      console.log(num * num)
@@ -94,7 +88,7 @@
 //! Hello is alerted repeatedly after every 3 seconds
 // let timerId= setInterval(() => alert('Hello'), 2000);
 
-// Clear intervals after 6 sec with the timer id 
+// Clear intervals after 6 sec with the timer id
 // setTimeout(() => { clearInterval(timerId); alert('Bye'); }, 6000);
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -105,9 +99,7 @@
 //   }
 //   setInterval(waitForSecond, 5000)
 
-
 /////////////////////////////////////////////////////////////////////////////
-
 
 //! Write a function that takes two arguments, an array and an element, and returns the number of times the element appears in the array.
 
@@ -124,7 +116,6 @@
 
 // twoArgs(arr, 99)
 
-
 // const arr = [ 1,2,3,3,3,4,2,5,5,1,1,1,1,1 ]
 
 // function elementCount(arr, element){
@@ -135,9 +126,7 @@
 
 ////////////////////////////////////////////////////////////////////////////////
 
-
 //! Write a function that takes a string as an argument and returns the string reversed.
-
 
 // function reverseString (str) {
 //     var splitt = str.split("")     //splits the string into array
@@ -155,7 +144,6 @@
 
 ////////////////////////////////////////////////////////////////////////////////
 
-
 //! Write a function that takes an array of numbers as an argument and returns the sum of the elements in the array
 
 // var arr = [ 1, 2, 3, 4, 5 ]
@@ -164,8 +152,8 @@
 // function addArr () {
 //  console.log('length', arr)
 //  let sum = 0;
-//     sum = arr[0] + arr[1] + arr[2] + arr[3] + arr[4] 
-    
+//     sum = arr[0] + arr[1] + arr[2] + arr[3] + arr[4]
+
 //     console.log(sum)
 
 // }
@@ -190,7 +178,6 @@
 
 ////////////////////////////////////////////////////////////////////////////////
 
-
 //! Write a function that takes an object as an argument and returns a new object with all the properties from the original object, but with their values multiplied by 2
 
 // const obj = {
@@ -199,7 +186,7 @@
 // }
 
 // function objFunction() {
-    
+
 // console.log('org obj===', obj)
 // const multiplyy = 2;
 
@@ -229,9 +216,7 @@
 
 // console.log("new obj==",newObj);
 
-
 ////////////////////////////////////////////////////////////////////////////////
-
 
 //! guess the output questions
 
@@ -342,9 +327,7 @@
 // console.log("2nd output ===", functionInput(1,2,3,));
 // console.log("3rd output ===", functionInput(5,5,5,5,5));
 
-
 //////////////////////////////////////////////////////////////////////////////
-
 
 //! Spread Operator
 
@@ -413,13 +396,12 @@
 //   average: 35.85
 // };
 
-// const half = ({max, min}) =>  
+// const half = ({max, min}) =>
 //    (max + min) / 2.0
 
 ///////////////////////////////////////////////////////////////
 
 //! callback function
-
 
 // function getNumber(callback) {
 //   const number = Math.floor(Math.random() * 10) + 1;
@@ -558,7 +540,6 @@
 
 // ! Class keyword Javascript
 
-
 // class Animal {
 //   constructor(name, age, sound) {
 //     this.name = name;
@@ -591,9 +572,7 @@
 // myDog.makeSound(); // output: Buddy says bark!
 // myDog.fetch('ball'); // output: Buddy fetched the ball!
 
-
 //////////////////////////////////////////////////////////////
-
 
 // class Vegetable {
 // // Only change code above this line
@@ -627,7 +606,6 @@
 
 /////////////////////////////////////////////////////////////
 
-
 // class Vegetable {
 
 // constructor(name){
@@ -645,10 +623,10 @@
 // const makeServerRequest = new Promise((resolve, reject) => {
 //   // responseFromServer is set to true to represent a successful response from a server
 //   let responseFromServer = true;
-	
+
 //   if(responseFromServer) {
 //     resolve("resolved >>>>>>>>> We got the data");
-//   } else {	
+//   } else {
 //     reject("reject >>>>>>>>>> Data not received");
 //   }
 // });
@@ -656,3 +634,33 @@
 // makeServerRequest.then(result => {
 //   console.log(result);
 // });
+
+/////////////////////////////////////////////////////////////////////
+
+//TODO.....   IMP CONCEPTS   .....
+
+//!          1.spread opeator
+
+// arr = [1, 2, 3, 8, 9, 10];
+
+// arr2 = ["a", "b", "j", "l"];
+
+// function avg(a, b, c) {
+//   return (a + b + c) / 2;
+// }
+
+// let a = avg(...arr);
+
+// console.log("a =====", a);
+
+// let newArr = [...arr, ...arr2, 88];
+
+// console.log("newArr ===== ", newArr);
+
+obj1 = { a: 1, b: "b" };
+
+obj2 = { name: "ashwini", something: "zzzzz", what: 2, s: 44 };
+
+newObj = { ...obj1, ...obj2 };
+
+console.log("newObj ======= ", newObj);
