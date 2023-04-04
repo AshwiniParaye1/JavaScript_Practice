@@ -688,3 +688,28 @@
 // let newOBJ = { ...obj1, ...obj2 };
 
 // console.log("newOBJ>>>>>>>>", newOBJ);
+
+////////////////////////////////////////////////////////////////////////////////
+
+//!               3. async
+
+// console.log("this is 1st console");
+
+// setTimeout(() => {
+//   console.log("inside setTimeout");
+// }, 1000);
+
+// console.log("this is 2nd console");
+
+///////////////////////////////////////////////////////////////////////////
+
+let a = 4;
+console.log("a==", a);
+
+setTimeout(() => {
+  let z = 3;
+  console.log("z==", z);
+}, 1000);
+
+let m = 0;
+console.log("m==", m);
