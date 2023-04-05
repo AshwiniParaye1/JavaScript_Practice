@@ -742,10 +742,48 @@
 
 //!          5.   reduce
 
-let a = [1, 2, 3, 4, 5];
+// let a = [1, 2, 3, 4, 5];
 
-let a2 = a.reduce((val1, val2) => {
-  return val1 + val2;
-});
+// let a2 = a.reduce((val1, val2) => {
+//   console.log("val1 and val2 >>", val1, val2);
+//   //   console.log("val2 >>", val2);
+//   return val1 + val2;
+// });
 
-console.log("a2 ======== ", a2);
+// console.log("a2 ======== ", a2);
+
+//////////////////////////////////////////////////////////////////////////////
+
+//!          6.       Hoisting
+
+// var x = 7;
+
+// function getName() {
+//   console.log("Inside the function");
+// }
+
+// getName();
+
+// console.log("x ==== ", x);
+
+// console.log("getName");
+
+//////////////////////////////////////////////////////////////////
+
+//!            7. how functions work
+
+var x = 1;
+a();
+b();
+console.log("outside === ", x);
+
+function a() {
+  var x = 10;
+  console.log("inside a() === ", x);
+}
+function b() {
+  var x = 100;
+  console.log("inside b() === ", x);
+}
+
+//////////////////////////////////////////////////////////////////////////
