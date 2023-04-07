@@ -772,18 +772,61 @@
 
 //!            7. how functions work
 
-var x = 1;
-a();
-b();
-console.log("outside === ", x);
+// var x = 1;
+// a();
+// b();
+// console.log("outside === ", x);
 
-function a() {
-  var x = 10;
-  console.log("inside a() === ", x);
-}
-function b() {
-  var x = 100;
-  console.log("inside b() === ", x);
-}
+// function a() {
+//   var x = 10;
+//   console.log("inside a() === ", x);
+// }
+// function b() {
+//   var x = 100;
+//   console.log("inside b() === ", x);
+// }
 
 //////////////////////////////////////////////////////////////////////////
+//!          fetch medium articles
+
+// function fetchMediumArticles() {
+// const url = `https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@${"ashwini-paraye"}`;
+
+// fetch(url)
+//   .then((response) => response.json())
+//   .then((data) => {
+//     const articles = data.items;
+//     // Do something with the articles, such as display them on a webpage
+//     console.log("articles =======", articles);
+//   })
+//   .catch((error) => {
+//     console.error(error);
+//   });
+// }
+// fetchMediumArticles();
+
+//////////////////////////////////////////////////////////////////////
+
+//!                    undefined vs not-defined
+
+// console.log(a);
+// var a;
+// console.log('a==',a);
+
+// var b =7;
+// console.log('b==',b);
+
+// console.log(x)
+
+//////////////////////////////////////////////////////
+
+// var a;
+// console.log(a);
+
+// a = 10;
+// console.log("a==", a);
+
+// a = "hello";
+// console.log("string a ===", a);
+
+/////////////////////////////////////////////////////////////
