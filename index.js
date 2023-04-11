@@ -830,3 +830,23 @@
 // console.log("string a ===", a);
 
 /////////////////////////////////////////////////////////////
+
+//!                         Scope chain
+
+// function a() {
+//   //   console.log("inside b==", b);
+//   var b = 10;
+//   c();
+
+//   function c() {
+//     // console.log("inside c function ===", b);
+//   }
+// }
+
+// // var b = 10;
+// a();
+// console.log(b);
+
+///////////////////////////////////////////////////////////////////////////////
+
+//!                     let | var | const

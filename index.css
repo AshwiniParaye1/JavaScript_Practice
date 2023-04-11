@@ -25,3 +25,8 @@ span.c {
     border: 1px solid blue;
     background-color: yellow;
 } */
+*{
+    background-color:lightcyan;
+    color: green;
+    text-align: center;
+}
