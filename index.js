@@ -873,3 +873,79 @@
 // y=10;
 
 /////////////////////////////////////////////////////////////////
+
+//!                  block scope and shadowing
+
+// {
+//   var a = 10;
+//   let b = 20;
+//   const c = 30;
+//   console.log("inside block var a ==", a);
+//   console.log("inside block let b ==", b);
+//   console.log("inside block const c ==", c);
+// }
+// console.log("outside block var a ==", a);
+// console.log("outside block let b ==", b);
+// console.log("outside block const c ==", c);
+
+// var a = 100;
+// let b = 40;
+// const c = 60;
+// {
+//   var a = 10;
+//   let b = 20;
+//   const c = 30;
+//   console.log(a);
+//   console.log(b);
+//   console.log(c);
+// }
+// // console.log(a);
+// // console.log(b);
+// console.log(c);
+
+////////////////////////////////////////////////////////////////
+
+// const c = 100;
+
+// function x() {
+//   const c = 10;
+//   console.log(c);
+// }
+// x();
+// console.log(c);
+
+///////////////////////////////////////////////////////////
+
+// let a = 20;
+// {
+//   var a = 40;
+// }
+
+// var a = 10;
+
+// {
+//   let a = 20;
+// }
+
+// let a = 100;
+
+// function z() {
+//   var a = 200;
+//   console.log(a);
+// }
+// z();
+// console.log(a);
+
+// const a = 100;
+
+// {
+//   const a = 200;
+//   // console.log(a);
+//   {
+//     // const a = 300;
+//     console.log("3rd block", a);
+//   }
+// }
+// console.log(a);
+
+/////////////////////////////////////////////////////////////////////
