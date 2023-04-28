@@ -1036,3 +1036,13 @@
 //////////////////////////////////////////////////////////////
 
 //* accessing array
+
+// let obj = {
+//   name: "ashwini",
+//   age: 24,
+// };
+// let arr = [1, "a", "adsdn", "t", obj];
+
+// console.log(arr);
+
+// console.log("accessing arr elements == ", arr[2]);
