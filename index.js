@@ -1005,15 +1005,34 @@
 
 //!                setTimeout and closures
 
-function x() {
-  var i = 1;
+// function x() {
+//   var i = 1;
 
-  for (var i = 1; i <= 5; i++) {
-    setTimeout(function () {
-      console.log(i);
-    }, i * 1000);
-  }
+//   for (var i = 1; i <= 5; i++) {
+//     setTimeout(function () {
+//       console.log(i);
+//     }, i * 1000);
+//   }
 
-  console.log("Hellooo!!! outside setTimeout");
-}
-x();
+//   console.log("Hellooo!!! outside setTimeout");
+// }
+// x();
+
+///////////////////////////////////////////////////////
+
+//!          Array and its methods
+
+// let arr; // declaring an array
+
+// arr = ["a", "v", "c"];
+
+// let arr2 = ["a", "f", 2, 6];
+
+// //* 1. length
+
+// console.log("arr", arr);
+// console.log("array length ==", arr.length);
+
+//////////////////////////////////////////////////////////////
+
+//* accessing array
