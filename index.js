@@ -1207,12 +1207,68 @@
 
 //* splice ---- deletes and add elem to existing array(modifies the array)
 
-let arr = ["apple", "mango", "grapes", "cherry"];
+// let arr = ["apple", "mango", "grapes", "cherry"];
 
-const spliceArr = arr.splice(1, 2, "orange");
+// const spliceArr = arr.splice(1, 2, "orange");
 
-console.log(arr);
+// console.log(arr);
 
 //////////////////////////////////////////////////////////////
 
-//* fill -----
+//* fill ----- replaces all the array elements with value which will be provided
+
+// const dummy = [2, 4, 6, 6];
+
+// console.log(dummy);
+
+// dummy.fill(8, 2);
+
+// console.log(dummy);
+
+///////////////////////////////////////////////////////////////////////////////
+
+//*  findIndex --- returns the index of array element and takes callback function
+
+// let nums = [1, 2, 3, 4, 5, 6, 7, 8];
+
+// const index = nums.findIndex((item) => item === 6);
+
+// console.log(index);
+
+////////////////////////////////////////////////////////////
+
+//* flat --- ---- - - flattens the nested array
+
+// let nums = [1, 2, [3, 4], 5, [6, [7, [[8]]]]];
+
+// const flatt = nums.flat(4);
+
+// console.log(flatt);
+
+/////////////////////////////////////////////////////////
+
+//* reverse ------ reverses the array elements
+
+// let nums = [2, 4, 6, 8];
+
+// const reverse = nums.reverse();
+
+// console.log(reverse);
+
+//////////////////////////////////////////////////////////////////
+
+//* sort ----------sorts the array elements
+
+// let unsoreted = [4, 34, 55, 2, 10, 4];
+
+// console.log(unsoreted);
+
+// const asc = unsoreted.sort((a, b) => a - b);
+
+// console.log(asc);
+
+// const desc = unsoreted.sort((a, b) => b - a);
+
+// console.log(desc);
+
+///////////////////////////////////////////////////////////////////
