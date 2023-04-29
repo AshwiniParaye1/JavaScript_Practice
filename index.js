@@ -1046,3 +1046,173 @@
 // console.log(arr);
 
 // console.log("accessing arr elements == ", arr[2]);
+
+////////////////////////////////////////////////////////////////
+
+//*  add and remove elements from array
+
+//!push ------------- adds at end
+
+// let arr = ["apple", "mango", "grapes", "cherry"];
+
+// arr.push("xyz");
+// arr.push("new fruit");
+
+// console.log(arr, arr.length);
+
+//!pop ------------- remove from end
+
+// arr.pop();
+// arr.pop();
+// console.log(arr);
+
+//////////////////////////////////////////////////////////////////////
+
+//!  unshift and shift
+
+//* unshift -------------- adds at start
+
+// let arr = ["apple", "mango", "grapes", "cherry"];
+
+// arr.unshift("unshift element");
+
+// console.log(arr);
+
+// arr.shift();    //* shift removes the first element
+
+// console.log(arr);
+
+//////////////////////////////////////////////
+
+//* looping an array
+
+//!  for and while loop
+
+// let arr = ["apple", "mango", "grapes", "cherry"];
+
+// for (let i = 0; i < arr.length; i++) {
+//   console.log(arr[i]);
+// }
+
+// let i = 0;
+// while (i < arr.length) {
+//   console.log(arr[i]);
+
+//   i++;
+// }
+
+/////////////////////////////////////////////////////////////////////
+
+//!  inbuilt loops
+
+//* map --------- iterates through every element of arr ad creates a new arr
+
+// let num = [1, 2, 3, 4, 5];
+
+// const mapVar = num.map((item, index) => {
+//   return item + 2;
+// });
+
+// console.log(typeof mapVar);
+
+///////////////////////////////////////////////////////////////////////////////
+
+//* filter ----------- returns a new array only the items which satisfy condition
+
+// let num = [1, 2, 3, 4, 5];
+
+// const filtervar = num.filter((item, index, array) => {
+//   return item > 2;
+// });
+
+// console.log(filtervar);
+
+///////////////////////////////////////////////////////////////
+
+//*  reduce -------- reduces the array to only 1 value
+
+// let num = [1, 2, 3, 4, 5];
+
+// const reduce = num.reduce((previous, current) => {
+//   return previous + current;
+// }, 2);
+
+// console.log(reduce);
+
+////////////////////////////////////////////////////////////////////////////
+
+//*  some ------- returns true or false even if at one time only the condition gets fulfilled
+
+// let num = [1, 2, 3, 4, 5];
+
+// const some = num.some((item, index, array) => {
+//   return item > 4;
+// });
+
+// console.log(some);
+
+//////////////////////////////////////////////////////////////
+
+//* every --------strict condition check- return T or F if all elemts fullfill the condition
+
+// let num = [1, 2, 3, 4, 5];
+
+// const every = num.every((item, index, array) => {
+//   return item < 40;
+// });
+
+// console.log(every);
+
+//////////////////////////////////////////////////////////////////////////////
+
+//* find --------- returns the 1st elem which satisfies the condition
+
+// let num = [1, 2, 3, 4, 5];
+
+// const find = num.find((item, index, array) => {
+//   return item > 3;
+// });
+
+// console.log(find);
+
+///////////////////////////////////////////////////////////////////////////////
+
+//*  concat ----- joins 2 or more arrays and returns a new array
+
+// let num1 = [1, 2, 3, 4, 5];
+// let num2 = [10, 20, 30, 40, 50];
+// let arr = ["ada", "er"];
+
+// const numArr = num1.concat(num2, arr);
+
+// console.log(numArr);
+
+////////////////////////////////////////////////////////////////////////////
+
+//* slice ----- returns a copy of piece of array
+
+// let arr = ["apple", "mango", "grapes", "cherry"];
+
+// console.log(arr);
+
+// const sliceArr = arr.slice(1, 4);
+
+// console.log(sliceArr);
+
+// const negativeArr = arr.slice(-3, -1);
+
+// console.log(negativeArr);
+
+////////////////////////////////////////////////////////////
+
+//* splice ---- deletes and add elem to existing array(modifies the array)
+
+let arr = ["apple", "mango", "grapes", "cherry"];
+
+const spliceArr = arr.splice(1, 2, "orange");
+
+console.log(arr);
+
+//////////////////////////////////////////////////////////////
+
+//* fill -----
