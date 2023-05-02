@@ -1273,5 +1273,24 @@
 
 ///////////////////////////////////////////////////////////////////
 
-let numArray = [3, 10, 4, 21, 5, 2].sort();
-console.log(numArray);
+// let numArray = [3, 10, 4, 21, 5, 2].sort();
+// console.log(numArray);
+
+//////////////////////////////////////////////////////////////////
+
+//!  callback functions -- function called inside another function
+
+// setTimeout(() => {
+//   console.log("timer");
+// }, 5000);
+
+// function x(y) {
+//   console.log("x");
+//   y();
+// }
+
+// x(function y() {
+//   console.log("y");
+// });
+
+//////////////////////////////////////////////////////////////////////////
