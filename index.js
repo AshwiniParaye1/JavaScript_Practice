@@ -1294,3 +1294,175 @@
 // });
 
 //////////////////////////////////////////////////////////////////////////
+
+// getName(); // Namaste Javascript
+
+// console.log(x); // undefined
+
+// var x = 7;
+
+// function getName() {
+//   console.log("Namaste Javascript");
+// }
+
+//////////////////////////////////////////////
+
+// getName(); // Uncaught TypeError: getName is not a function
+
+// console.log(getName);
+
+// var getName = function () {
+//   console.log("Namaste JavaScript");
+// };
+
+/////////////////////////////////////////////////////////////////
+
+// var x = 1;
+
+// a();
+// b(); // we are calling the functions before defining them. This will work properly, as seen in hoisting
+
+// console.log(x);
+
+// function a() {
+//   var x = 10; // local scope because of separate execution context
+//   console.log(x);
+// }
+
+// function b() {
+//   var x = 100;
+//   console.log(x);
+// }
+
+/////////////////////////////////////////////////////////////////
+
+// function a() {
+//   console.log(b); // 10
+//   // Instead of printing undefined it prints 10, So somehow this a function could access
+//   // the variable b outside the function scope.
+// }
+// var b = 10;
+// a();
+
+////////////////////////////////////////////////////////////////////
+
+// function a() {
+//   c();
+//   function c() {
+//     console.log(b); // 10
+//   }
+// }
+// var b = 10;
+// a();
+
+//////////////////////////////////////////////////////////////////
+
+// function a() {
+//   c();
+//   function c() {
+//     var b = 100;
+//     console.log(b); // 100
+//   }
+// }
+// var b = 10;
+// a();
+
+////////////////////////////////////////////////////
+
+// function a() {
+//   var b = 10;
+//   c();
+//   function c() {
+//     console.log(b); // 10
+//   }
+// }
+// a();
+// console.log(b); // Error, Not Defined
+
+////////////////////////////////////////////////////////
+
+// console.log(a); // ReferenceError: Cannot access 'a' before initialization
+
+// console.log(b); // prints undefined as expected
+
+// let a = 10;
+
+// console.log(a); // 10
+
+// var b = 15;
+
+// console.log(window.a); // undefined
+
+// console.log(window.b); // 15
+
+///////////////////////////////////////////////////////////////
+
+// let a = 10;
+// let a = 100; //this code is rejected upfront as SyntaxError. (duplicate declaration)
+// // ------------------
+// let b = 10;
+// var b = 100; // this code also rejected upfront as SyntaxError. (can't use same name in same scope)
+
+//////////////////////////////////////////////////////////////////////////
+
+// var a = 100;
+// {
+//   var a = 10; // same name as global var
+//   let b = 20;
+//   const c = 30;
+//   console.log(a); // 10
+//   console.log(b); // 20
+//   console.log(c); // 30
+// }
+
+// console.log("a==", a); // 10, instead of the 100 we were expecting. So block "a" modified val of global "a" as well. In console, only b and c are in block space. a initially is in global space(a = 100), and when a = 10 line is run, a is not created in block space, but replaces 100 with 10 in global space itself
+
+////////////////////////////////////////////////////////////////////
+
+// let b = 100;
+// {
+//   var a = 10;
+//   let b = 20;
+//   const c = 30;
+//   console.log("inside the block b====", b); // 20
+// }
+// console.log("outside the block b ===", b); // 100, Both b's are in separate spaces (one in Block(20) and one in Script(another arbitrary mem space)(100)). Same is also true for *const* declarations
+
+///////////////////////////////////////////////////////////////////////////////
+
+// let a = 200;
+
+// function x() {
+//   var a = 20;
+
+//   console.log("inside === ", a);
+// }
+// x();
+// console.log("outside === ", a);
+
+///////////////////////////////////////////////////////////////////////////////
+
+//! callback functions  ----- functions passed into another function
+
+// setTimeout(() => {
+//   console.log("timer");
+// }, 5000);
+
+// function x(y) {
+//   console.log("x");
+//   y();
+// }
+
+// x(function y() {
+//   console.log("y");
+// });
+
+/////////////////////////////////////////////////////////////////////
+
+// document.getElementById("clickMe").addEventListener("click", function xyz() {
+//   console.log("callback function + button clicked");
+// });
+
+////////////////////////////////////////////////////////////////////////////////
+
+//! closures
