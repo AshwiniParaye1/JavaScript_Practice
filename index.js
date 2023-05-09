@@ -1465,16 +1465,30 @@
 
 ////////////////////////////////////////////////////////////////////////////////
 
-//! closures
+// //! closures
 
-function attachEventListener() {
-  let count = 0;
+// function attachEventListener() {
+//   let count = 0;
 
-  document.getElementById("clickMe").addEventListener("click", function xyz() {
-    console.log("callback function + button clicked", count++);
-  });
-}
+//   document.getElementById("clickMe").addEventListener("click", function xyz() {
+//     console.log("callback function + button clicked", count++);
+//   });
+// }
 
-attachEventListener();
+// attachEventListener();
 
 /////////////////////////////////////////////////////////////////////////
+
+console.log("start");
+
+setTimeout(function cbT() {
+  console.log("cb set timeout");
+}, 5000);
+
+fetch("https://dummyjson.com/products/1").then(function cbF() {
+  console.log("cb netflix");
+});
+
+console.log("end");
+
+////////////////////////////////////////////////////////////////////
