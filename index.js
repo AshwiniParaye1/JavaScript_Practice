@@ -1479,16 +1479,60 @@
 
 /////////////////////////////////////////////////////////////////////////
 
-console.log("start");
+// console.log("start");
 
-setTimeout(function cbT() {
-  console.log("cb set timeout");
-}, 5000);
+// setTimeout(function cbT() {
+//   console.log("cb set timeout");
+// }, 5000);
 
-fetch("https://dummyjson.com/products/1").then(function cbF() {
-  console.log("cb netflix");
-});
+// fetch("https://dummyjson.com/products/1").then(function cbF() {
+//   console.log("cb netflix");
+// });
 
-console.log("end");
+// console.log("end");
 
 ////////////////////////////////////////////////////////////////////
+
+//! higher order function -   function that take another function as arguement
+
+//////////////////////////////////////////////////////////////////////////////
+
+//! map, filter and reduce - HOC
+
+const users = [
+  { fn: "ashwini", ln: "paraye", age: 24 },
+  { fn: "radhika", ln: "aapte", age: 24 },
+  { fn: "dipika", ln: "padukone", age: 35 },
+  { fn: "katrina", ln: "kaif", age: 36 },
+];
+
+// const output = users.map((first) => first.fn);
+
+// console.log(output);
+
+// const reduces = users.reduce(function (acc, curr) {
+//   if (acc[curr.age]) {
+//     acc[curr.age] = ++acc[curr.age];
+//   } else {
+//     acc[curr.age] = 1;
+//   }
+//   return acc;
+// }, {});
+
+// console.log(reduces);
+
+///////////////////////////////////////////////////////////////////////
+
+// const filterr = users.filter((f) => f.age > 30).map((m) => m.fn);
+
+// console.log(filterr);
+
+//////////////////////////////////////////////////////////////////
+
+// const reducee = users.reduce(function (acc, curr) {
+//   if (curr.age > 30) {
+//     return acc[curr.fn];
+//   }
+// });
+
+// console.log(reducee);
